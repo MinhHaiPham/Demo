@@ -1,4 +1,3 @@
-// Global dependencies 
 var $ = require('jquery');
 
 export default (function(){

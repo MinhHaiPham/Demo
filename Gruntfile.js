@@ -9,8 +9,7 @@
 
 'use strict';
 
-/*
- * PERFORMANCE
+/* PERFORMANCE
  * 
  * 1. For performance reasons you should only matching one level down, if possible. 
  * 2. Try to keep your watch task clean. Do NOT watch everything (like icons).
@@ -64,7 +63,7 @@ module.exports = function(grunt) {
 	grunt.registerTask('server', [
 		'browserify:vendor',
 		'browserify:dev',
-		'jscs',
+		//'jscs',
 		'mangony:dev',
 		'concurrent:syncing',
 		'watchCSS',
