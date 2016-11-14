@@ -25,21 +25,24 @@ body {
     @include button-variant(#fff, red, blue);
     &:hover {
       @include button-variant(green, pink, blue);
-      @include button-size(20px, 30px, 20px, 20px, 10px)
+      @include button-size(20px, 30px, 20px, 20px, 10px);
     }
   }
   &-2 {
     @include button-variant(green, pink, blue);
     &:hover {
       @include button-variant(#fff, green, blue);
-      @include button-size(20px, 30px, 20px, 20px, 10px)
+      @include button-size(20px, 30px, 20px, 20px, 10px);
     }
   }
   &-3 {
     @include button-variant(red, green, #000);
     &:hover {
       @include button-variant(green, yellow, blue);
-      @include button-size(20px, 30px, 20px, 20px, 10px)
+      @include button-size(20px, 30px, 20px, 20px, 10px);
     }
   }
+}
+.alert-info {
+  @include alert-variant(pink, #000, blue);
 }

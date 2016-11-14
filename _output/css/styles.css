@@ -6069,6 +6069,15 @@ body {
       color: yellow;
       background-color: green; }
 
+.alert-info {
+  background-color: pink;
+  border-color: #000;
+  color: blue; }
+  .alert-info hr {
+    border-top-color: black; }
+  .alert-info .alert-link {
+    color: #0000cc; }
+
 @media print {
   * {
     background: transparent !important;
