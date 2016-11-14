@@ -6,15 +6,40 @@ BASE
 Global styles
 --------------------------------------------------- */
 html {
-	font-size: 62.5%;
-	height: 100%;
+  font-size: 62.5%;
+  height: 100%;
 }
 
 body {
-	font-family: Arial, sans-serif;
-	font-size: 16px;
-	line-height: 1.4;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
 }
-.mt50{
-	margin-top: 50px;
+
+.mt50 {
+  margin-top: 50px;
+}
+
+.btn {
+  &-1 {
+    @include button-variant(#fff, red, blue);
+    &:hover {
+      @include button-variant(green, pink, blue);
+      @include button-size(20px, 30px, 20px, 20px, 10px)
+    }
+  }
+  &-2 {
+    @include button-variant(green, pink, blue);
+    &:hover {
+      @include button-variant(#fff, green, blue);
+      @include button-size(20px, 30px, 20px, 20px, 10px)
+    }
+  }
+  &-3 {
+    @include button-variant(red, green, #000);
+    &:hover {
+      @include button-variant(green, yellow, blue);
+      @include button-size(20px, 30px, 20px, 20px, 10px)
+    }
+  }
 }
