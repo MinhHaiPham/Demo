@@ -1,0 +1,24 @@
+/* ===================================================
+Main File For Imports
+=================================================== */
+
+
+
+// Global Variables and Settings
+@import "global/_vars";  
+@import "../bower-components/bootstrap-sass/assets/stylesheets/bootstrap"; // You can choose your specific components
+
+// Icons
+@import "icons/**/*";
+
+// Mixins
+@import "utils/mixins/**/*";
+
+// Extends
+@import "utils/extends/**/*";
+
+// Globals
+@import "global/_base";
+
+// Print
+@import "global/_print";

@@ -1,0 +1,41 @@
+{
+  "generator-veams": {
+    "projectName": "Demo",
+    "projectAuthor": "pmhai",
+    "taskRunner": [
+      "grunt"
+    ],
+    "templateEngine": "mangony",
+    "mangonyExpress": false,
+    "installExtendedLayout": false,
+    "installPlugin": false,
+    "gulpModules": [],
+    "gruntModules": [
+      "grunt-autoprefixer",
+      "grunt-browser-sync",
+      "grunt-browserify",
+      "grunt-combine-mq",
+      "grunt-contrib-uglify",
+      "grunt-csscomb",
+      "grunt-dr-svg-sprites",
+      "grunt-version"
+    ],
+    "features": [
+      "createDevFolder"
+    ],
+    "jsLibs": [
+      "jquery"
+    ],
+    "cssLibs": [
+      "bootstrap-sass"
+    ],
+    "testAndQA": true,
+    "testAndQALibs": [
+      "jscs",
+      "hintingHTML",
+      "hintingJS"
+    ],
+    "veamsPackages": [],
+    "docs": []
+  }
+}
