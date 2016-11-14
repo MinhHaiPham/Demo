@@ -17,7 +17,7 @@
 		<meta charset="utf-8"/>
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=IE7"/>
 		<meta name="viewport" content="width=device-width"/>
-		<title>Build Better Prototypes with Veams | demo</title>
+		<title>Demo Challenge | demo</title>
 		<link rel="shortcut icon" href=".//img/favicon.ico" type="image/x-icon">
 		<link rel="icon" href=".//img/favicon.ico" type="image/x-icon">		<link rel="stylesheet" href="./css/styles.css"/>
 	
@@ -25,7 +25,53 @@
 
 <body class="">
 	
-			<h3>Demo Content!</h3>
+	        <div class="container">
+            <h1 class="text-center">Form Demo</h1>
+            <form class="form-horizontal mt50" role="form">
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Ho va ten:</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" placeholder="Ho va ten">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Ngay sinh:</label>
+                    <div class="col-sm-8">
+                        <input type="date" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group form-inline">
+                    <label class="col-sm-2 control-label">Gioi tinh:</label>
+                    <div class="col-sm-8">
+                        <input type="radio" name="gender" value="male" checked> Nam
+                        <input type="radio" name="gender" value="female"> Nu
+                        <input type="radio" name="gender" value="other"> Other
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">So dien thoai:</label>
+                    <div class="col-sm-8">
+                        <input type="tel" class="form-control" placeholder="So dien thoai">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-8">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> Remember me !
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group text-center">
+                    <div class="col-sm-offset-2 col-sm-8">
+                        <button type="submit" class="btn btn-success" data-toggle="tooltip" data-placement="top" title="Submit">Submit</button>
+                        <button type="reset" class="btn btn-warning" data-toggle="tooltip" data-placement="top" title="Reset">Reset</button>
+                        <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="Cancel">Cancel</button>
+                    </div>
+                </div>
+            </form>
+        </div>
 
 	
 	<!-- Scripts

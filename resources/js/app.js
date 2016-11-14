@@ -19,3 +19,6 @@ export default (function(){
 	return App;
 
 }).call(this);
+$(function () {
+	$('[data-toggle="tooltip"]').tooltip()
+})
