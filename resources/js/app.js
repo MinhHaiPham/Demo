@@ -1,24 +1,32 @@
 var $ = require('jquery');
 
-export default (function(){
-	'use strict';
+export default (function () {
+    'use strict';
 
-	// Save a reference to the global object
-	var root = window;
-	var App = root.App = window.App || {};
+    // Save a reference to the global object
+    var root = window;
+    var App = root.App = window.App || {};
 
-	App.$ = $;
+    App.$ = $;
 
-	// Versioning
-	App.version = "0.0.1";
+    // Versioning
+    App.version = "0.0.1";
 
-	// Feature detection
-	App.support = App.support || {};
-	App.support.touch = 'ontouchstart' in window;
+    // Feature detection
+    App.support = App.support || {};
+    App.support.touch = 'ontouchstart' in window;
 
-	return App;
+    return App;
 
 }).call(this);
+
 $(function () {
-	$('[data-toggle="tooltip"]').tooltip()
-})
+    $('[data-toggle="tooltip"]').tooltip()
+});
+
+$(".form_datetime").datetimepicker({
+    format: "dd MM yyyy - hh:ii",
+    autoclose: true,
+    todayBtn: true,
+    pickerPosition: "bottom-left"
+});
