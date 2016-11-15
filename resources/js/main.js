@@ -1,6 +1,10 @@
-// Global dependencies
-import App from './app';
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+});
 
-var $ = require('jquery');
-
-console.log('JS initialized in version:', App.version);
+$(".form_datetime").datetimepicker({
+    format: "dd MM yyyy - hh:ii",
+    autoclose: true,
+    todayBtn: true,
+    pickerPosition: "bottom-right"
+});

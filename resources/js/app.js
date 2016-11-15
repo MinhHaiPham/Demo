@@ -16,17 +16,18 @@ export default (function () {
     App.support = App.support || {};
     App.support.touch = 'ontouchstart' in window;
 
+
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    });
+
+    $(".form_datetime").datetimepicker({
+        format: "dd MM yyyy - hh:ii",
+        autoclose: true,
+        todayBtn: true,
+        pickerPosition: "bottom-right"
+    });
+
     return App;
 
 }).call(this);
-
-$(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-});
-
-$(".form_datetime").datetimepicker({
-    format: "dd MM yyyy - hh:ii",
-    autoclose: true,
-    todayBtn: true,
-    pickerPosition: "bottom-left"
-});
